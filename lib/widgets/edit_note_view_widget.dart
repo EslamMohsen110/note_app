@@ -13,7 +13,10 @@ class EditNoteViewWidget extends StatelessWidget {
         child: Column(
           children: [
             CustomAppBar(title: 'Edit App', icon: Icons.check),
-            CustomTextFiled(hintText: 'hintText'),
+            SizedBox(height: 50),
+            CustomTextFiled(hintText: 'title'),
+            SizedBox(height: 20),
+            CustomTextFiled(hintText: 'Content', maxLine: 5),
           ],
         ),
       ),
